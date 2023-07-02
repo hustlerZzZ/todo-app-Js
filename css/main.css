@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+body {
+  background-color: hsl(235, 21%, 11%);
+}
+
+.todo {
+  margin: 0 auto;
+}
+.todo-top {
+  display: flex;
+  padding: 0 60rem;
+  justify-content: space-between;
+  background-image: url(../images/bg-desktop-dark.jpg), linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.todo-top__head {
+  font-size: 2rem;
+  padding: 15rem 0;
+  color: #fff;
+}
+.todo-top__head h1 {
+  letter-spacing: 2rem;
+}
+.todo-top__theme {
+  margin: auto 0;
+}
+.todo-top__theme button {
+  font-size: 2rem;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+}
+.todo-input {
+  transform: translateY(-12rem);
+  margin: 0 auto;
+  text-align: center;
+}
+.todo-input__box input {
+  padding: 2rem 2rem;
+  padding-right: 55rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: hsl(234, 39%, 85%);
+  background-color: hsl(235, 24%, 19%);
+  border: none;
+}
+.todo-input__box input:focus {
+  outline: none;
+}
+.todo-main {
+  margin: 0 auto;
+  width: 100%;
+}
+.todo-main__box {
+  margin: inherit;
+}
+.todo-main__box__item {
+  width: 35.5%;
+  transform: translateY(-10rem);
+  padding: 2rem 2rem;
+  margin: 0 auto;
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 39%, 85%);
+  border-bottom: 0.5px solid hsl(234, 39%, 85%);
+}
+.todo-main__box__item input {
+  text-align: start;
+  margin-right: 2rem;
+}
+.todo-main__box__item label {
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+.todo-main__bottom {
+  margin: 0 auto;
+  background-color: hsl(235, 24%, 19%);
+  width: 35.5%;
+  padding: 2rem;
+  color: hsl(234, 39%, 85%);
+  transform: translateY(-10rem);
+}
+.todo-main__bottom__item {
+  display: flex;
+  justify-content: space-between;
+}
+.todo-main__bottom__item_Left p {
+  font-size: 1.5rem;
+}
+.todo-main__bottom__item_sortBtn button:nth-child(1) {
+  color: hsl(220, 98%, 61%);
+}
+.todo-main__bottom button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: hsl(234, 39%, 85%);
+}
+
+.reorder-text {
+  text-align: center;
+  color: hsl(234, 39%, 85%);
+}
+.reorder-text p {
+  font-size: 2rem;
+}
+
+.checked {
+  text-decoration: line-through;
+}

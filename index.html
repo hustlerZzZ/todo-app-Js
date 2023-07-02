@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!-- JS -->
+        <script src="scripts/index.js" defer type="module"></script>
+
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/9e6b5b84ae.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Title -->
+        <title>Todo App</title>
+    </head>
+    <body>
+        <div class="todo">
+            <div class="todo-top">
+                <div class="todo-top__head">
+                    <h1>TODO</h1>
+                </div>
+                <div class="todo-top__theme">
+                    <button><i class="fa-solid fa-moon hidden"></i></button>
+                    <button><i class="fa-solid fa-sun"></i></button>
+                </div>
+            </div>
+
+            <div class="todo-input">
+                <div class="todo-input__box">
+                    <input
+                        type="text"
+                        placeholder="Create a new todo..."
+                        id="todo-input__boxItem"
+                    />
+                </div>
+            </div>
+
+            <div class="todo-main">
+                <div class="todo-main__box">
+                    <template id="todo-main__box__template">
+                        <div class="todo-main__box__item" draggable="true">
+                            <input type="checkbox" name="" id="" />
+                            <label for=""></label>
+                        </div>
+                    </template>
+                    <div class="todo-main__box__item" draggable="true">
+                        <input type="checkbox" name="1" id="item-1" value="1" />
+                        <label for="1">Complete Js Course</label>
+                    </div>
+                    <div class="todo-main__box__item" draggable="true">
+                        <input type="checkbox" name="2" id="item-2" value="2" />
+                        <label for="2">Jog around the park 3x</label>
+                    </div>
+                    <div class="todo-main__box__item" draggable="true">
+                        <input type="checkbox" name="3" id="item-3" value="3" />
+                        <label for="3">Read book for 1 hour</label>
+                    </div>
+                    <div class="todo-main__box__item" draggable="true">
+                        <input type="checkbox" name="4" id="item-4" value="4" />
+                        <label for="4">Complete React App</label>
+                    </div>
+                    <div class="todo-main__box__item" draggable="true">
+                        <input type="checkbox" name="5" id="item-5" value="5" />
+                        <label for="5">Complete Todo App</label>
+                    </div>
+                </div>
+                <div class="todo-main__bottom">
+                    <div class="todo-main__bottom__item">
+                        <div class="todo-main__bottom__item_Left">
+                            <p>5 item Left</p>
+                        </div>
+                        <div class="todo-main__bottom__item_sortBtn">
+                            <button id="todo-main__bottom__item_sortBtn-all">
+                                All
+                            </button>
+                            <button id="todo-main__bottom__item_sortBtn-active">
+                                Active
+                            </button>
+                            <button
+                                id="todo-main__bottom__item_sortBtn-completed"
+                            >
+                                Completed
+                            </button>
+                        </div>
+                        <div class="todo-main__bottom__item_deleteCompleted">
+                            <button>Clear Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reorder-text">
+            <p>Drag and drop to reorder list</p>
+            <h2>Made with ❤️ by Prince.</h2>
+        </div>
+    </body>
+</html>
